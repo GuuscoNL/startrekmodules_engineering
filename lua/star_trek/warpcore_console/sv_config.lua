@@ -16,6 +16,6 @@
 --     Warp Core Console | Config    --
 ---------------------------------------
 
-Star_Trek.WarpCore.ValidCodes = {
+Star_Trek.WarpCore_Console.ValidCodes = {
 	["Default Code"] = "420256",
 }

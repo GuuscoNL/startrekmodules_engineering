@@ -35,7 +35,7 @@ function SELF:Open(ent)
 			local coreBut1 = ents.FindByName("coreBut1")[1]
 
 			local code = table.concat(values)
-			if Star_Trek.WarpCore:IsValidCode(code) then
+			if Star_Trek.WarpCore_Console:IsValidCode(code) then
 				interfaceData:Close()
 
 				coreBut1:Fire("FireUser3")
@@ -43,7 +43,7 @@ function SELF:Open(ent)
 				Star_Trek.Logs:AddEntry(coreBut1, ply, "Warp Core ejected!")
 
 				Star_Trek.Logs:AddEntry(coreBut1, ply, "Code Used:")
-				local codeName = table.KeyFromValue(Star_Trek.WarpCore.ValidCodes, code)
+				local codeName = table.KeyFromValue(Star_Trek.WarpCore_Console.ValidCodes, code)
 				Star_Trek.Logs:AddEntry(coreBut1, ply, codeName)
 			else
 				interfaceData.Ent:EmitSound("star_trek.lcars_error")

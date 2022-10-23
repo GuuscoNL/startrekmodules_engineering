@@ -19,5 +19,6 @@
 Star_Trek = Star_Trek or {}
 Star_Trek.Modules = Star_Trek.Modules or {}
 
-Star_Trek.Modules["control_console"] = false
-Star_Trek.Modules["logs_console"] = false
+Star_Trek.Modules["control_console"] = true
+Star_Trek.Modules["logs_console"] = true
+Star_Trek.Modules["warpcore_console"] = true
