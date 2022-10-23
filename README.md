@@ -6,3 +6,7 @@ This Addon requires the main startrekmodules addon, to function.
 - https://github.com/oninoni/startrekmodules
 
 Currently NOT Released since it is higly Experimental.
+
+Trello Board:
+
+https://trello.com/b/OXe7kwID/star-trek-modules
