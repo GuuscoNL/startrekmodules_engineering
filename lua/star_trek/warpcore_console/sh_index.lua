@@ -21,15 +21,11 @@ Star_Trek:RequireModules("lcars", "warpcore")
 Star_Trek.WarpCore_Console = Star_Trek.WarpCore_Console or {}
 
 if SERVER then
-	AddCSLuaFile("cl_warpcore.lua")
-
 	include("sv_config.lua")
 	include("sv_warpcore_console.lua")
 end
 
 if CLIENT then
-	include("cl_warpcore.lua")
-
 	return
 end
 
