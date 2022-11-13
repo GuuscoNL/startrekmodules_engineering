@@ -8,18 +8,18 @@
 -- This software can be used freely, --
 --    but only distributed by me.    --
 --                                   --
---    Copyright © 2021 Jan Ziegler   --
+--    Copyright © 2022 Jan Ziegler   --
 ---------------------------------------
 ---------------------------------------
 
 ---------------------------------------
---   Star Trek Engineering | Loader  --
+--     vFire Integration | Index     --
 ---------------------------------------
 
-Star_Trek = Star_Trek or {}
-Star_Trek.Modules = Star_Trek.Modules or {}
+Star_Trek:RequireModules("security")
 
-Star_Trek.Modules["control_console"] = true
-Star_Trek.Modules["logs_console"] = true
-Star_Trek.Modules["warpcore_console"] = true
-Star_Trek.Modules["vfire_integration"] = true
+Star_Trek.vFire_Integration = Star_Trek.vFire_Integration or {}
+
+if SERVER then
+	include("sv_vfire_integration.lua")
+end
