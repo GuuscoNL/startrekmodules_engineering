@@ -45,6 +45,7 @@ hook.Add("Star_Trek.Security.OverrideScanEntry", "Star_Trek.vFire_Integration.Ov
 	if not scanData.IsFire then return end
 
 	Star_Trek.Logs:AddEntry(self.Ent, ply, "WARNING: Fire detected in " .. object.SectionName, Star_Trek.LCARS.ColorRed)
+	self.Ent:EmitSound("star_trek.lcars_alert14")
 
 	return true
 end)
