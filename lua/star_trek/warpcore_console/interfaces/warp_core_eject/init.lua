@@ -38,6 +38,8 @@ function SELF:Open(ent)
 			if Star_Trek.WarpCore_Console:IsValidCode(code) then
 				interfaceData:Close()
 
+				hook.Run("Star_Trek.WarpCore_Console.Eject")
+
 				coreBut1:Fire("FireUser3")
 				Star_Trek.Logs:AddEntry(coreBut1, ply, "")
 				Star_Trek.Logs:AddEntry(coreBut1, ply, "Warp Core ejected!")
